@@ -1,0 +1,26 @@
+.realPriceButton {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    outline: none;
+    width: auto;
+    font-family: Museo-Sans-500, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5rem;
+    border: 0.0625rem solid rgb(228, 0, 43);
+    background-color: rgb(228, 0, 43);
+    color: rgb(255, 255, 255);
+    border-radius: 0.1875rem;
+    padding: calc(0.6875rem) 1.5rem;
+    cursor: pointer;
+}
+
+.realPriceButton:focus {
+    outline: 0;
+    background-color: rgb(170, 0, 31);
+}
