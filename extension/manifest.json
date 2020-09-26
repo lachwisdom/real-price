@@ -1,6 +1,6 @@
 {
     "name": "Real Price",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Find the real price for Australian Real Estate!",
     "content_scripts": [
         {
@@ -8,6 +8,9 @@
             "css": ["main.css"],
             "js": ["contentScript.js"]
         }
+    ],
+    "permissions": [
+        "*://lexa.realestate.com.au/*"
     ],
     "icons": {
         "16": "icon/icon16.png",

@@ -39,7 +39,6 @@ function isInRange(address, min, max) {
     })
     .then(result => result.json())
     .then(response => {
-        console.log(response.data.buySearch.results.exact.items)
         return response.data.buySearch.results.exact.items && response.data.buySearch.results.exact.items.length >= 1;
     });
 }
@@ -73,7 +72,8 @@ function onGetPrice(button, listingElement, address, event) {
         }).format(price);
         button.textContent = formatted;
     })
-    .catch(() => {
+    .catch((error) => {
+        console.error(error);
         button.textContent = 'Failed to fetch';
     });
 }
