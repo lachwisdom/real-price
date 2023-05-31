@@ -9,7 +9,7 @@
             "js": ["contentScript.js"]
         }
     ],
-    "permissions": [
+    "host_permissions": [
         "*://lexa.realestate.com.au/*"
     ],
     "icons": {
